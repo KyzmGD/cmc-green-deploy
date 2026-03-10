@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  background: #ddd;
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.navbar {
+  background: #108836;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  padding: 15px 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.navbar li:hover {
+  background: #96ef99;
+}
+
+.active {
+  background: #01311da8;
+}
+
+.tieudesp {
+  background: #366f28;
+  padding: 15px;
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.sp-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+
+.sanpham {
+  text-align: center;
+}
+
+.sanpham img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 800px) {
+  .sp-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .sp-container {
+    grid-template-columns: 1fr;
+  }
+}
