@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background: #ddd;
+  padding: 0;
 }
 
 .banner {
@@ -9,6 +10,15 @@ body {
   display: block;
 }
 
+.footer {
+  width: 100%;
+}
+
+.footer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .navbar {
   background: #dce8d9;
   width: 100%;
