@@ -1,14 +1,13 @@
 <!doctype html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CMC GREEN</title>
-
     <link rel="stylesheet" href="../ALL CSS/home.css" />
+    <link rel="stylesheet" href="../ALL CSS/sp.css" />
   </head>
   <body>
-    <img src="../IMG/imgHome/CMC GREEN (1).jpg" class="banner" />
 
     <nav class="navbar">
       <ul>
@@ -19,15 +18,146 @@
           <a href="../Chinhsach/chinhsach.html"><b>Chính sách</b></a>
         </li>
         <li>
-          <a href="../Gioithieu/gt.html"><b>Giới thiệu</b></a>
+          <a href="../Gioithieu/"><b>Giới thiệu</b></a>
         </li>
-        <li class="active">
-          <a href="./sanpham.html"><b>Sản phẩm</b></a>
+        <li class="dropdown-parent active">
+          <a href="sanpham.html" class="nav-link">Sản phẩm</a>
+          <ul class="dropdown-menu">
+            <li><a href="#rau">Rau</a></li>
+            <li><a href="#hoaqua">Hoa quả</a></li>
+            <li><a href="#nam">Nấm</a></li>
+          </ul>
         </li>
         <li>
           <a href="../LienHe/lienhe.html"><b>Liên hệ</b></a>
         </li>
       </ul>
     </nav>
+<div class="container">
+    <section class="featured-section">
+        <h1 class="main-title">Sản Phẩm Nổi Bật</h1>
+        <div class="featured-grid">
+            <div class="featured-col">
+                <div class="col-header">RAU</div>
+                <div class="product-mini">
+                    <img src="../IMG/imgSP/placeholder.jpg" alt="Rau">
+                    <p>Rau Tầm Bóp - 5.000đ</p>
+                </div>
+                <div class="product-mini">
+                    <img src="../IMG/imgSP/placeholder.jpg" alt="Rau">
+                    <p>Cải Mèo - 4.800đ</p>
+                </div>
+            </div>
+
+            <div class="featured-col">
+                <div class="col-header">HOA QUẢ</div>
+                <div class="product-mini">
+                    <img src="../IMG/imgSP/placeholder.jpg" alt="Quả">
+                    <p>Táo Đỏ - 12.000đ</p>
+                </div>
+                <div class="product-mini">
+                    <img src="../IMG/imgSP/placeholder.jpg" alt="Quả">
+                    <p>Cam Sành - 9.000đ</p>
+                </div>
+            </div>
+
+            <div class="featured-col">
+                <div class="col-header">NẤM</div>
+                <div class="product-mini">
+                    <img src="../IMG/imgSP/placeholder.jpg" alt="Nấm">
+                    <p>Nấm Hương - 15.000đ</p>
+                </div>
+                <div class="product-mini">
+                    <img src="../IMG/imgSP/placeholder.jpg" alt="Nấm">
+                    <p>Nấm Linh Chi - 45.000đ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="filter-section">
+    <form action="/tim-kiem" method="GET">
+        <input type="text" name="search" placeholder="Tìm tên rau, củ, quả...">
+        <select name="category">
+            <option value="">Tất cả loại</option>
+            <option value="rau">Rau xanh</option>
+            <option value="hoa-qua">Hoa quả</option>
+            <option value="nam">Nấm</option>
+        </select>
+        <button type="submit">Tìm kiếm</button>
+    </form>
+</section>
+    <section class="category-list">
+        <div class="list-bar" id="rau">Sản phẩm : Rau</div>
+        <div class="full-grid">
+            <div class="product-card">
+                <img src="../IMG/imgSP/placeholder.jpg" alt="rau">
+                <p>Rau Tầm Bóp - 5.000đ</p>
+            </div>
+            <div class="product-card">
+                <img src="../IMG/imgSP/placeholder.jpg" alt="rau">
+                <p>Cải Mèo - 4.800đ</p>
+            </div>
+            <div class="product-card">
+                <img src="../IMG/imgSP/placeholder.jpg" alt="rau">
+                <p>Rau Củ - 3.500đ</p>
+            </div>
+            <div class="product-card">
+                <img src="../IMG/imgSP/placeholder.jpg" alt="rau">
+                <p>Rau Bina - 6.000đ</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-list">
+        <div class="list-bar" id="hoa-qua">Sản phẩm : Hoa quả</div>
+        <div class="full-grid">
+            <div class="product-card">
+                <img src="../IMG/imgSP/placeholder.jpg" alt="quả">
+                <p>Táo Đỏ - 12.000đ</p>
+            </div>
+            <div class="product-card">
+                <img src="../IMG/imgSP/placeholder.jpg" alt="quả">
+                <p>Cam Sành - 9.000đ</p>
+            </div>
+            <div class="product-card">
+                <img src="../IMG/imgSP/placeholder.jpg" alt="quả">
+                <p>Cherry - 25.000đ</p>
+            </div>
+            <div class="product-card">
+                <img src="../IMG/imgSP/placeholder.jpg" alt="quả">
+                <p>Đu đủ - 8.000đ</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-list">
+        <div class="list-bar" id = nam>Sản phẩm : Nấm</div>
+        <div class="full-grid">
+            <div class="product-card">
+                <img src="../IMG/imgSP/placeholder.jpg" alt="nấm">
+                <p>Nấm Hương - 15.000đ</p>
+            </div>
+            <div class="product-card">
+                <img src="../IMG/imgSP/placeholder.jpg" alt="nấm">
+                <p>Nấm Linh Chi - 45.000đ</p>
+            </div>
+            <div class="product-card">
+                <img src="../IMG/imgSP/placeholder.jpg" alt="nấm">
+                <p>Nấm Rơm - 12.000đ</p>
+            </div>
+            <div class="product-card">
+                <img src="../IMG/imgSP/placeholder.jpg" alt="nấm">
+                <p>Nấm Mộc Nhĩ - 20.000đ</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+</div>
+    <footer class="footer">
+        <img src="../IMG/imgHome/Footer.jpg" />
+    </footer>
   </body>
 </html>
