@@ -85,7 +85,19 @@ img {
   }
 }
 
+.home_header {
+  height: 300px;
+  background-image: url(../IMG/imgHome/headerpic2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
 
+.header_text {
+  font-weight: 500;
+  padding-top: 140px;
+  font-size: 40px;
+}
 .content-wrapper {
   flex: 1;
 }
@@ -93,10 +105,10 @@ img {
 footer {
   width: 100%;
   background: linear-gradient(to right, #c3e4b6, #2ad630);
-  color:#fff;
+  color: #fff;
   padding: 80px 0 30px;
   font-size: 10px;
-  clear:both;
+  clear: both;
   display: block;
   font-size: 16px;
   border-top-left-radius: 35px;
@@ -105,8 +117,8 @@ footer {
   margin-top: 30px;
 }
 
-.row{
-  width:90%;
+.row {
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -114,12 +126,12 @@ footer {
   justify-content: space-between;
 }
 
-.col{
+.col {
   flex-basis: 25%;
   padding: 10px;
   box-sizing: border-box;
   color: black;
-  flex:1;
+  flex: 1;
   display: block;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -134,13 +146,13 @@ footer {
   margin-bottom: 5px;
 }
 
-.col h3{
+.col h3 {
   width: fit-content;
   margin-bottom: 20px;
   position: relative;
-  color:black;
+  color: black;
   margin-top: 0;
-  display:block;
+  display: block;
 }
 
 .email-id {
@@ -160,12 +172,12 @@ ul li {
   margin-bottom: 12px;
 }
 
-ul li a{
+ul li a {
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
-form{
+form {
   padding-bottom: 15px;
   display: flex;
   align-items: center;
@@ -173,18 +185,18 @@ form{
   border-bottom: 1px solid #ccc;
   margin-bottom: 50px;
 }
-form .far{
+form .far {
   font-size: 18px;
   margin-right: 20px;
 }
 
 form input {
-  width:100%;
+  width: 100%;
   background: transparent;
-  color:black;
-  border:0;
+  color: black;
+  border: 0;
   outline: none;
-  padding-left:10px;
+  padding-left: 10px;
 }
 
 form button {
