@@ -10,61 +10,31 @@
   </head>
   <body>
     <div class="bg-image"></div>
-
+    
     <header>
       <nav>
         <ul class="sidebar">
           <li onclick="hideSidebar()">
-            <a href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#000000"
-              >
-                <path
-                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-                /></svg
-            ></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
           </li>
           <li><a href="../Chinhsach/chinhsach.html">Chính sách</a></li>
           <li><a href="../Gioithieu/gt.html">Giới thiệu</a></li>
           <li><a href="./sanpham.html">Sản phẩm</a></li>
           <li><a href="../LienHe/lienhe.html">Liên hệ</a></li>
         </ul>
-
+  
         <ul>
-          <li>
-            <a href="../index.html"><img src="../IMG/imgHome/logo.png" /></a>
-          </li>
-          <li class="hideOnMobile">
-            <a href="../Chinhsach/chinhsach.html">Chính sách</a>
-          </li>
-          <li class="hideOnMobile">
-            <a href="../Gioithieu/gt.html">Giới thiệu</a>
-          </li>
+          <li><a href="../index.html"><img src="../IMG/imgHome/logo.png" /></a></li>
+          <li class="hideOnMobile"><a href="../Chinhsach/chinhsach.html">Chính sách</a></li>
+          <li class="hideOnMobile"><a href="../Gioithieu/gt.html">Giới thiệu</a></li>
           <li class="hideOnMobile"><a href="./sanpham.html">Sản phẩm</a></li>
-          <li class="hideOnMobile">
-            <a href="../LienHe/lienhe.html">Liên hệ</a>
-          </li>
+          <li class="hideOnMobile"><a href="../LienHe/lienhe.html">Liên hệ</a></li>
           <li onclick="showSidebar()">
-            <a href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24px"
-                viewBox="0 -960 960 960"
-                width="24px"
-                fill="#000000"
-              >
-                <path
-                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-                /></svg
-            ></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
           </li>
         </ul>
       </nav>
-    </header>
+    <header>
 
     <script>
       function showSidebar() {
@@ -121,11 +91,7 @@
 
       <section class="filter-section">
         <form action="/tim-kiem" method="GET">
-          <input
-            type="text"
-            name="search"
-            placeholder="Tìm tên rau, củ, quả..."
-          />
+          <input type="text" name="search" placeholder="Tìm tên rau, củ, quả..." />
           <select name="category">
             <option value="">Tất cả loại</option>
             <option value="rau">Rau xanh</option>
@@ -202,9 +168,10 @@
         </div>
       </section>
     </div>
-
-    <main class="content-wrapper"></main>
-    <footer>
+    
+   <main class="content-wrapper">
+    </main>
+      <footer>
       <div class="row">
         <div class="col">
           <a href="../index.html"
@@ -218,10 +185,7 @@
           </p>
         </div>
         <div class="col">
-          <h3>
-            Liên hệ
-            <div class="underline"><span></span></div>
-          </h3>
+          <h3>Liên hệ<div class = "underline"><span></span></div></h3>
           <p>Số 84C</p>
           <p>Đường Nguyễn Thanh Bình</p>
           <p>Hà Đông, Hà Nội</p>
@@ -229,10 +193,7 @@
           <h4>+84 945678913</h4>
         </div>
         <div class="col">
-          <h3>
-            Liên kết
-            <div class="underline"><span></span></div>
-          </h3>
+          <h3>Liên kết<div class = "underline"><span></span></div></h3>
           <ul>
             <li><a href="../index.html">Trang chủ</a></li>
             <li><a href="../Chinhsach/chinhsach.html">Chính sách </a></li>
@@ -242,10 +203,7 @@
           </ul>
         </div>
         <div class="col">
-          <h3>
-            Đăng kí nhận tin
-            <div class="underline"><span></span></div>
-          </h3>
+          <h3>Đăng kí nhận tin<div class = "underline"><span></span></div></h3>
           <form>
             <i class="fa-regular fa-envelope"></i>
             <input type="email" placeholder="Nhập email của bạn" required />
@@ -254,37 +212,21 @@
             </button>
           </form>
           <h4>Kết nối với chúng tôi!</h4>
-          <a
-            href="https://www.facebook.com/wedontactuallyhaveapagethisisallyouregonnaget"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-brands fa-facebook"></i>
+          <a href="https://www.facebook.com/wedontactuallyhaveapagethisisallyouregonnaget" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-facebook"></i>
           </a>
-          <a
-            href="https://www.instagram.com/wedontactuallyhaveapagethisisallyouregonnaget"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-brands fa-instagram"></i>
+          <a href="https://www.instagram.com/wedontactuallyhaveapagethisisallyouregonnaget" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-instagram"></i>
           </a>
-          <a
-            href="https://www.whatsapp.com/wedontactuallyhaveapagethisisallyouregonnaget"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-brands fa-whatsapp"></i>
+          <a href="https://www.whatsapp.com/wedontactuallyhaveapagethisisallyouregonnaget" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i>
           </a>
-          <a
-            href="https://www.telegram.com/wedontactuallyhaveapagethisisallyouregonnaget"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-brands fa-telegram"></i>
+          <a href="https://www.telegram.com/wedontactuallyhaveapagethisisallyouregonnaget" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-telegram"></i>
           </a>
         </div>
       </div>
-      <hr />
+      <hr>
       <p class="copyright">© 2026 CMC Green. All rights reserved.</p>
     </footer>
   </body>
