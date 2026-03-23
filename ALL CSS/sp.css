@@ -1,194 +1,275 @@
 body {
-    background-image: url(../IMG/imgHome/sayangq8.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
-    backdrop-filter: blur(50px);
-
+  background-image: url(../IMG/imgHome/sayangq8.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  backdrop-filter: blur(50px);
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
 }
 .footer {
-    padding-top:50px;
+  padding-top: 50px;
 }
 .main-title {
-    text-align: center;
-    padding: 20px 0;
-    color: #333;
+  text-align: center;
+  padding: 20px 0;
+  color: #333;
 }
 
 .featured-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 50px;
 }
 
 .featured-col {
-    border: 1px solid #dce8d9;
-    background: #fdfdfd;
-    padding-bottom: 10px;
+  border: 1px solid #dce8d9;
+  background: #fdfdfd;
+  padding-bottom: 10px;
 }
 
 .col-header {
-    background: #35c53a;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  background: #35c53a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .product-mini {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px dashed #eee;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px dashed #eee;
 }
 
 .product-mini img {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    margin-right: 15px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 15px;
 }
 
 .list-bar {
-    background: #35c53a;
-    padding: 12px 20px;
-    font-weight: bold;
-    margin: 20px 0;
+  background: #35c53a;
+  padding: 12px 20px;
+  font-weight: bold;
+  margin: 20px 0;
 }
 
 .full-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .product-card {
-    border: 1px solid #eee;
-    padding: 15px;
-    text-align: center;
+  border: 1px solid #eee;
+  padding: 15px;
+  text-align: center;
 }
 
 .product-card img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .filter-section {
-    background: #f4f4f4;
-    padding: 10px 10px 0px 10px;
-    text-align: left;
-    align-items: center;
-    gap: 10px;
+  background: #f4f4f4;
+  padding: 10px 10px 0px 10px;
+  text-align: left;
+  align-items: center;
+  gap: 10px;
 }
 
-
-
-.filter-section input, .filter-section select, .filter-section button {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin: 2px 0 0px 5px;
-    text-wrap: nowrap;
+.filter-section input,
+.filter-section select,
+.filter-section button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 2px 0 0px 5px;
+  text-wrap: nowrap;
 }
 
 .filter-section select {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .filter-section button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    font-weight: bold;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
 }
 
 .filter-section button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 .scroll-container {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 20px 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 20px 0;
 }
 
 .scroll-track {
-    display: flex;
-    width: max-content;
-    animation: infiniteScroll 60s linear infinite;
+  display: flex;
+  width: max-content;
+  animation: infiniteScroll 60s linear infinite;
 }
 
 .scroll-track:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
-
 @keyframes infiniteScroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .product-card {
-    flex: 0 0 250px;
-    margin: 0 10px;
-    border-radius: 10%;
-    border: 1px solid #eee;
-    padding: 15px;
-    text-align: center;
-    background: #fff;
-    box-sizing: border-box;
-    transition: transform 0.1s ease, box-shadow 0.1s ease; 
+  flex: 0 0 250px;
+  margin: 0 10px;
+  border-radius: 10%;
+  border: 1px solid #eee;
+  padding: 15px;
+  text-align: center;
+  background: #fff;
+  box-sizing: border-box;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
 }
 
 .product-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-    z-index: 10;
-    cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  cursor: pointer;
 }
 
 .product-card img {
-    width: 200px; 
-    height: 150px; 
-    object-fit: cover; 
-    border-radius: 4px;
-    margin-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .scroll-container h5 {
-    color:#117014;
+  color: #117014;
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .container {
-    animation: fadeInUp 1.2s ease-out forwards;
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.filter-section button:hover {
+  background-color: #45a049;
+}
+
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 20px 0;
+}
+
+.scroll-track {
+  display: flex;
+  width: max-content;
+  animation: infiniteScroll 60s linear infinite;
+}
+
+.scroll-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.product-card {
+  flex: 0 0 250px;
+  margin: 0 10px;
+  border-radius: 10%;
+  border: 1px solid #eee;
+  padding: 15px;
+  text-align: center;
+  background: #fff;
+  box-sizing: border-box;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.product-card img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scroll-container h5 {
+  color: #117014;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeInUp 1.2s ease-out forwards;
 }
