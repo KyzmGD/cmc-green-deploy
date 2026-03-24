@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./ALL CSS/design.css" />
     <link rel="stylesheet" href="./ALL CSS/chinhsach.css" />
     <link rel="stylesheet" href="./ALL CSS/gt.css" />
+    
     <script src="https://kit.fontawesome.com/b35f6463c5.js"></script>
   </head>
   <body>
@@ -77,6 +78,41 @@
       </ul>
     </nav>
     <header>
+ 
+          <!-- Slider Section -->
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide active">
+          <div class="slide-content">
+            <h1 class="slide-title">Trời đẹp thì mát, rau sạch ngon cơm</h1>
+            <p class="slide-desc">Rau sạch - An toàn - Tươi ngon mỗi ngày</p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <h1 class="slide-title">Buổi trưa ăn bưởi chua</h1>
+            <p class="slide-desc">Cam kết không hóa chất độc hại, không tồn dư thuốc bảo vệ thực vật</p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <h1 class="slide-title">CMC Green - Đồng hành cùng bữa ăn an toàn</h1>
+            <p class="slide-desc">Giao hàng nhanh chóng, tận tâm phục vụ khách hàng</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Nút điều khiển -->
+      <button class="slider-btn prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="slider-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
+      
+      <!-- Chấm tròn chỉ mục -->
+      <div class="slider-dots">
+        <span class="dot active-dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </div>
 
     <script>
       function showSidebar() {
@@ -89,9 +125,7 @@
       }
     </script>
 
-    <div class="home_header">
-      <h1 class="header_text">Trời đẹp thì mát, rau sạch ngon cơm</h1>
-    </div>
+    
 
     <div class="products-grid-section">
   <h2 class="section-title"><i class="fa-brands fa-product-hunt" style="color: rgb(46, 169, 19);"></i>Sản phẩm nổi bật</h2>
@@ -405,5 +439,6 @@
       <hr />
       <p class="copyright">© 2026 CMC Green. All rights reserved.</p>
     </footer>
+    <script src="./JavaS/home.js"></script>
   </body>
 </html>
