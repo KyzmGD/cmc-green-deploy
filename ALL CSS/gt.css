@@ -1,83 +1,262 @@
-/* ALL CSS/stylegt.css */
-.about-container {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+body {
+  background-color: #eafaf1; 
+  min-height: 100vh;
 }
-
-.about-header {
+.about-hero {
+  max-width: 1100px;
+  margin: 20px auto 0;
+  border-radius: 15px;
+  /* Sử dụng ảnh có sẵn của bạn làm nền */
+  background: linear-gradient(rgba(46, 204, 113, 0.85), rgba(39, 174, 96, 0.85)), url('../IMG/imgHome/bg9.jpg') center/cover no-repeat;
+  padding: 80px 20px;
   text-align: center;
-  margin-bottom: 30px;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
-.about-header h1 {
-  color: #4caf50;
-  font-size: 36px;
-  margin-bottom: 10px;
+.about-hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.about-quote {
-  font-style: italic;
-  color: #555;
+.about-hero p {
   font-size: 18px;
-  border-left: 4px solid #4caf50;
-  padding-left: 15px;
-  margin: 20px 0;
-  background: #f9f9f9;
-  padding: 15px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.about-content h2 {
-  color: #333;
-  border-bottom: 2px solid #dce8d9;
-  padding-bottom: 5px;
-  margin-top: 30px;
+.about-container {
+  max-width: 1100px;
+  margin: -30px auto 50px; /* Kéo khung nội dung nhô lên đè vào banner một chút tạo chiều sâu */
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  position: relative;
+  z-index: 10;
 }
 
-.core-values {
+/* Quote Triết lý */
+.about-quote {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 20px;
+  font-style: italic;
+  padding: 30px;
+  background: #f1f8f1;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  border-left: 5px solid #2ecc71;
+}
+
+.about-quote i {
+  color: #2ecc71;
+  font-size: 30px;
+  margin-bottom: 15px;
+  opacity: 0.5;
+}
+
+.about-quote strong {
+  display: block;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #27ae60;
+  font-style: normal;
+}
+
+/* Tiêu đề các mục */
+.section-title {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 28px;
+  margin: 50px 0 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background: #2ecc71;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Story section */
+.about-story {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.story-content {
+  flex: 1;
+}
+
+.story-content h2 {
+  color: #27ae60;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.story-content p {
+  margin-bottom: 15px;
+  color: #555;
+  text-align: justify;
+}
+
+.story-img {
+  flex: 1.2; /* Tăng tỉ lệ khung ảnh rộng hơn một chút so với khung chữ (khung chữ đang là flex: 1) */
+}
+
+.story-img img {
+  width: 100%;
+  height: 380px; /* Ép chiều cao cố định để tạo thành một khung hình chữ nhật ngang rộng rãi */
+  object-fit: cover; /* THUỘC TÍNH QUAN TRỌNG NHẤT: Tự động zoom và cắt cúp ảnh sao cho lấp đầy khung mà không làm méo tỉ lệ */
+  object-position: center; /* Đảm bảo luôn lấy phần trung tâm, đẹp nhất của bức ảnh */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.story-img img:hover {
+  transform: scale(1.02);
+}
+
+/* Process Steps - Thể hiện sự uy tín */
+.process-steps {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.step {
+  flex: 1;
+  position: relative;
+}
+
+.step-icon {
+  width: 70px;
+  height: 70px;
+  background: #e9f7ef;
+  color: #27ae60;
+  font-size: 30px;
+  line-height: 70px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  border: 2px dashed #2ecc71;
+  transition: all 0.3s;
+}
+
+.step:hover .step-icon {
+  background: #27ae60;
+  color: #fff;
+  transform: rotate(10deg);
+}
+
+.step h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.step p {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Core Values */
+.core-values {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 30px;
 }
 
 .value-box {
   flex: 1;
-  background: #f4faf4;
-  padding: 20px;
-  border-radius: 8px;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
   text-align: center;
-  border: 1px solid #dce8d9;
-  transition: transform 0.3s;
+  border: 1px solid #eef5ee;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
 }
 
 .value-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(46, 204, 113, 0.15);
+  border-color: #2ecc71;
+}
+
+.value-icon {
+  font-size: 40px;
+  color: #2ecc71;
+  margin-bottom: 20px;
 }
 
 .value-box h3 {
-  color: #4caf50;
-  margin-bottom: 10px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 20px;
 }
 
+.value-box p {
+  color: #666;
+  font-size: 15px;
+}
+
+/* Partners Grid */
 .partners-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin-top: 20px;
+  gap: 20px;
 }
 
 .partner-item {
-  background: #eee;
-  padding: 15px;
-  text-align: center;
+  background: #fdfdfd;
+  padding: 20px;
+  text-align: left;
   border-radius: 8px;
   font-weight: bold;
-  color: #333;
+  color: #2c3e50;
+  border: 1px solid #eaeaea;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.partner-item:hover {
+  background: #e9f7ef;
+  border-color: #2ecc71;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-story, .process-steps, .core-values {
+    flex-direction: column;
+  }
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-hero {
+    margin: 10px;
+    padding: 50px 20px;
+  }
+  .about-container {
+    margin: -20px 10px 30px;
+    padding: 20px;
+  }
 }
