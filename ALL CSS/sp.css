@@ -87,9 +87,8 @@ body {
   height: auto;
 }
 
-/* Keep the section height stable */
 .category-section {
-  min-height: 350px; /* Adjust based on your product card height */
+  min-height: 350px;
   transition: opacity 0.3s ease;
   min-width: 1200px;
 }
